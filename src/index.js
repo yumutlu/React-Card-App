@@ -7,7 +7,7 @@ const App = () => {
   return (
     <div>
       <div className="card-group">
-        <Collapse>
+        <Collapse href="collapseExample1">
           <Card
             cardTitle="Card Title 1"
             cardText="Lorem upsum veseakfff"
@@ -16,7 +16,7 @@ const App = () => {
           />
         </Collapse>
 
-        <Collapse>
+        <Collapse href="collapseExample2">
           <Card
             cardTitle="Card Title 2"
             cardText="Lorem upsum veseakggg"
@@ -25,7 +25,7 @@ const App = () => {
           />
         </Collapse>
 
-        <Collapse>
+        <Collapse href="collapseExample3">
           <Card
             cardTitle="Card Title 3"
             cardText="Lorem upsum veseaksasa"

@@ -1,13 +1,14 @@
 import React from "react";
 
 function Collapse(props) {
+
   return (
     <div>
     
         <a
-          class="btn btn-primary"
+          className="btn btn-primary"
           data-bs-toggle="collapse"
-          href="#collapseExample"
+          href={"#".concat(props.href)}
           role="button"
           aria-expanded="false"
           aria-controls="collapseExample"
@@ -16,8 +17,8 @@ function Collapse(props) {
         </a>
     
      
-      <div class="collapse" id="collapseExample">
-      Tıkla
+      <div className="collapse" id={props.href}>
+      {props.children}
       </div>
     </div>
   );
