@@ -1,9 +1,9 @@
 import React from "react";
 
-function Card(props) {
+const Card = (props) => {
   return (
   
-      <div className="card">
+      <div className="card w-100">
         <img src={props.image} className="card-img-top" alt="..." />
         <div className="card-body">
           <h5 className="card-title">{props.cardTitle}</h5>
@@ -17,5 +17,10 @@ function Card(props) {
       </div>
 
   );
+}
+
+Card.defaultProps={
+  cardTitle:"Default Props"
+
 }
 export default Card;
