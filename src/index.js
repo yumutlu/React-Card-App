@@ -1,17 +1,36 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from "react";
+import ReactDom from "react-dom";
+import Card from "./components/Card";
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
+const App = () => {
+  return (
+    <div>
+      <div className="card-group">
+      
+   <Card 
+   cardTitle="Card Title 1" 
+   cardText="Lorem upsum veseakfff" 
+   updateTime=" Last updated 2 min ago"
+   image="https://picsum.photos/id/231/200/300"
+   
+   />
+   <Card 
+   cardTitle="Card Title 2" 
+   cardText="Lorem upsum veseakggg" 
+   updateTime=" Last updated 4 min ago"
+   image="https://picsum.photos/id/239/200/300"
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+   />
+   <Card 
+   cardTitle="Card Title 3" 
+   cardText="Lorem upsum veseaksasa" 
+   updateTime=" Last updated 1 min ago"
+   image="https://picsum.photos/id/235/200/300"
+
+   />
+      </div>
+    </div>
+  );
+};
+
+ReactDom.render(<App />, document.getElementById("root"));
